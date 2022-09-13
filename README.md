@@ -13,8 +13,6 @@ This is an archive of hovac's site, if i can ill try to add new stuff
 
 - [@4lkanoid](https://www.github.com/4lkanoid)
 
-- [@Sukiluv](https://www.github.com/Sukiluv) many thanks to this user for having collaborated and helped in the removal of linvertise links.
-
 ## Contributing
 
 Contributions are always welcome!
