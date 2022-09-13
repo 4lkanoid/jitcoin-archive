@@ -24,11 +24,11 @@ Lets try to keep the site alive for a while, if you want to collaborate just hit
 
 ## Archived
 
-archived sites within the site
+archived sites within the hovac's site
 
 - Jelte.lol
 - Hackify.ru
-
+- Cheats.gq
 
 ## Feedback
 
