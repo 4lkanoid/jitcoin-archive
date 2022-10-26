@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Jacobtread#3770">
+    <meta name="keywords" content="dream,minecraft,cheats,hacks,clients,webgui,ghostclient,dreamclient">
+    <meta property="og:title" content="Dream Client"/>
+    <meta property="og:description" content="The dream of all players."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://dreamclient.xyz"/>
+    <meta property="og:image" content="https://dreamclient.xyz/assets/img/logo.png"/>
+    <title>Dream - Register</title>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.min.css?2">
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+    <script src="/assets/js/jquery-visible.min.js"></script>
+    <script src="/assets/js/jquery-cookie.min.js"></script>
+    <script src="/assets/js/tools.min.js"></script>
+    <!-- Site by Jacobtread - Jacobtread#3770 Discord -->
+</head>
+<body>
+<div class="page-loader" id="pageLoader">
+    <div class="centered">
+        <img src="/assets/img/logo.png" alt="Dream Logo" class="page-loader-logo">
+    </div>
+</div>    <div class="auth centered slide" type="register">
+        <div class="auth-header">
+            <img class="auth-logo" src="/assets/img/logo.png" alt="Dream Logo">
+        </div>
+        <p id="authError" class="auth-error other"></p>
+        <div class="auth-body">
+            <input type="hidden" id="recaptcha" re-captcha-token>
+            <div class="auth-inputs">
+                <div class="auth-field input-field">
+                    <label for="username">Username <i class="fa fa-exclamation-circle error-icon"></i><i class="fa fa-check-circle taken-icon"></i></label>
+                    <input type="text" class="auth-input input" id="username" name="username" placeholder="Username" minlength="4" maxlength="99">
+                    <p class="auth-error error"></p>
+                </div>
+                <div class="auth-field input-field">
+                    <label for="password">Password <i class="fa fa-exclamation-circle error-icon"></i></label>
+                    <input type="password" class="auth-input input" id="password" name="password"
+                           placeholder="Password" minlength="4" maxlength="99">
+                    <p class="auth-error error"></p>
+                </div>
+                <div class="auth-field input-field">
+                    <label for="passwordConfirm">Confirm <i class="fa fa-exclamation-circle error-icon"></i></label>
+                    <input type="password" class="auth-input input" id="passwordConfirm" name="password-confirm"
+                           placeholder="Confirm Password" minlength="4" maxlength="99">
+                    <p class="auth-error error"></p>
+                </div>
+                <button class="auth-button button" id="authSubmit" disabled>Register</button>
+            </div>
+            <a class="auth-switch" href="/login">Already have an account? <span>Login</span></a>
+        </div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf8EMwcAAAAAAtmJVt2BftFVBh2sbEi_Lt_5ty2"></script>
+    <script>
+        window.site_key = "6Lf8EMwcAAAAAAtmJVt2BftFVBh2sbEi_Lt_5ty2";
+        grecaptcha.ready(function () {
+            setRecaptcha();
+        });
+    </script>
+        <script src="/assets/js/auth.js"></script>
+
+</body>
+</html>
