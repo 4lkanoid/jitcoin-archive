@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Disallow: /oauth2
+Sitemap: https://sippin.cc/sitemap.xml
