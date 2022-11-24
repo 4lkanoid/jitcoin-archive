@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>A demonstration of how to access a NVIDIA Server (Ported to an actual site you can access easily if you're dumb)</h3>
+<input type="text" id="myText" value="">
+<p>Insert url to open</p>
+<a href="steam://open/" class="button">steam://open/</a>
+<a href="steam://flushconfig/" class="button">steam://flushconfig/</a>
+<a href="steam://nav/games" class="button">steam://nav/games</a>
+<a href="steam://install/105600" class="button">steam://install/228980/</a>
+<a href="steam://uninstall/228980" class="button">steam://uninstall/228980</a>
+<a href="steam://subscriptioninstall/105600/" class="button">steam://subscriptioninstall/250820/</a>
+<a href="steam://installaddon/hl2russian" class="button">ms-msdt:/</a>
+<button onclick="if (!window.__cfRLUnblockHandlers) return false; urlhttps()" data-cf-modified-a8036571440e019fc60aef4f-="">Open it, as https://</button>
+<button onclick="if (!window.__cfRLUnblockHandlers) return false; rawurl()" data-cf-modified-a8036571440e019fc60aef4f-="">Open it, as custom</button>
+<p id="demo"></p>
+<input type="button" onClick="if (!window.__cfRLUnblockHandlers) return false; CallMe()" value="Open USB" data-cf-modified-a8036571440e019fc60aef4f-="" />
+<input type="file" id="file-input" />
+<h3>Contents of the file:</h3>
+<pre id="file-content"></pre>
+<canvas id="glcanvas" width="0" height="0"></canvas>
+<script type="a8036571440e019fc60aef4f-text/javascript">
+    function readSingleFile(e) {
+  var file = e.target.files[0];
+  if (!file) {
+    return;
+  }
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    var contents = e.target.result;
+    displayContents(contents);
+  };
+  reader.readAsText(file);
+}
+
+function displayContents(contents) {
+  var element = document.getElementById('file-content');
+  element.textContent = contents;
+}
+
+document.getElementById('file-input')
+  .addEventListener('change', readSingleFile, false);
+    function CallMe()
+{
+ window.open("file:///C:/");
+}
+    var performance = window.performance || window.mozPerformance || window.msPerformance || window.webkitPerformance || {};
+
+    document.write("<br>");
+    for (var value in performance) {
+      document.write(value + "<br>");
+    }
+
+    document.write("<br><br><br>");
+
+    var canvas;
+    canvas = document.getElementById("glcanvas");
+    var gl = canvas.getContext("experimental-webgl");
+
+    document.write(gl.getParameter(gl.RENDERER) + "<br>");
+    document.write(gl.getParameter(gl.VENDOR) + "<br>");
+    document.write(getUnmaskedInfo(gl).vendor + "<br>");
+    document.write(getUnmaskedInfo(gl).renderer + "<br>");
+
+
+    function getUnmaskedInfo(gl) {
+      var unMaskedInfo = {
+        renderer: '',
+        vendor: ''
+      };
+
+      var dbgRenderInfo = gl.getExtension("WEBGL_debug_renderer_info");
+      if (dbgRenderInfo != null) {
+        unMaskedInfo.renderer = gl.getParameter(dbgRenderInfo.UNMASKED_RENDERER_WEBGL);
+        unMaskedInfo.vendor = gl.getParameter(dbgRenderInfo.UNMASKED_VENDOR_WEBGL);
+      }
+
+      return unMaskedInfo;
+    }
+  </script>
+<script type="a8036571440e019fc60aef4f-text/javascript">
+	function urlhttps() {
+	    var x = document.getElementById("myText").value;
+	    window.open("https://"+ x + "","_self")
+	}
+		function rawurl() {
+	    var x = document.getElementById("myText").value;
+	    window.open(x,"_self")
+	}
+	</script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="a8036571440e019fc60aef4f-|49" defer=""></script></body>
+</html>
