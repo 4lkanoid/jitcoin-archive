@@ -30,5 +30,5 @@ archived sites within the hovac's site
 
 ## Feedback
 
-If you have any feedback or you want me to remove anything on the archive, please reach to me at 4lkanoid@is-sus.com, btw this readme sucks
+If you have any feedback or you want me to remove anything on the archive let me know 
 
